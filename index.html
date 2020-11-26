@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bulb On And Off Working</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<body>
+		<div class="mainStyle">
+			<h1 align="center">Bulb On And Off</h1>
+			<main >
+				<figure >
+					<img src="lightoff.jpg" id="blbId1"  ><br>
+					<figcaption align="center">Bulb On/Off</figcaption><br>
+				</figure>
+				<figure>
+					<img src="lightoff.jpg" id="blbId2" ><br>
+					<figcaption align="center">Bulb On/Off</figcaption><br>
+				</figure>
+
+				<figure>
+					<img src="lightoff.jpg" id="blbId3" ><br>
+					<figcaption align="center">Bulb On/Off</figcaption><br>
+				</figure>
+				<figure>
+					<img src="lightoff.jpg" id="blbId4" ><br>
+					<figcaption align="center">Bulb On/Off</figcaption><br>
+				</figure>
+
+				<figure>
+					<img src="images/lightoff.jpg" id="blbId5" ><br>
+					<figcaption align="center">Bulb On/Off</figcaption><br>
+				</figure>
+				
+
+			</main>
+			<button onclick="myfun()">BULB ON AND OFF</button>
+		</div>
+
+		<script>
+			const myfun=()=> 
+			{
+				for (var i=1;i<6;i++)
+				{
+					let blbIdStore=document.getElementById('blbId' .concat(i));
+					
+				if (blbIdStore.src.match('lightoff')) {
+					blbIdStore.src="lighton.jpg";
+				}
+				else
+				{
+					blbIdStore.src="images/lightoff.jpg";
+				}
+				}
+				
+			}
+		</script>
+</body>
+</html>
